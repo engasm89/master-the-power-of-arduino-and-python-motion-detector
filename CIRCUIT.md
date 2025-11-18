@@ -1,19 +1,16 @@
-# Motion Detector — System Diagram
+# Master The Power Of Arduino And Python Motion Detector — Circuit Notes
 
-- Course: Master the Power of Arduino & Python: Motion Detector
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/arduino-python-email-sending-motion-detector-python/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Arduino board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Arduino reads PIR; Python sends email via SMTP/API.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
-PIR -> Arduino -> Serial -> Python -> Email
-```
-
-## Purchase With Discount
-
-Get a discounted price and implement email alerts — use the link above.
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
